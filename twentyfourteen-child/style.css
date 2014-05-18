@@ -1,0 +1,84 @@
+/*
+ Theme Name:   Twenty Fourteen eta4ever mod
+ Description:  Twenty Fourteen eta4ever mod
+ Author:       eta4ever
+ Author URI:   http://eta4.net
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+@import url("../twentyfourteen/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* центрировать весь сайт */
+
+#page {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+/*
+передвинуть основной сайдбар вправо
+*/
+
+#content {
+  float:left;
+  margin-left: 100px;
+}
+
+
+/* sidebar */
+#secondary {
+  float:right;
+  background-color: #336;
+  padding-top: 30px;
+}
+
+/* убрать подложку, оставшуюся от левого сайдбара */
+.site:before {
+	background-color: transparent;
+	width: 10px;
+}
+
+/* ширина контента */
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+/* убрать нахер заголовки "архив чего-то там" */
+.archive-header,
+.page-header {
+	display:none;
+}
+
+/*немного поиграем со шрифтами и цветами*/
+.site-header {
+	background-color: #000;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: sans-serif;
+}
+
+/*добавим отступ вниз от рубрик в записи и покрасим их в серый*/
+.site-content .entry-meta {
+	margin-bottom: 5px;
+}
+
+.cat-links, .cat-links a {
+	color: #CCC;
+}
